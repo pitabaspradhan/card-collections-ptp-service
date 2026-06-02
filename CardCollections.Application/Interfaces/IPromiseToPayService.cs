@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+using CardCollections.Application.DTOs;
 
 namespace CardCollections.Application.Interfaces
 {
     public interface IPromiseToPayService
     {
-        Task<Guid> CreatePromiseToPayAsync(
+        Task<PromiseToPayResponse> CreatePromiseToPayAsync(
             Guid caseId,
             decimal amount,
             DateOnly promiseDate,
