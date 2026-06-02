@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CardCollections.Application\CardCollections.Application.csproj" />
-    <ProjectReference Include="..\src\CardCollections.Domain\CardCollections.Domain.csproj" />
+    <ProjectReference Include="..\CardCollections.Domain\CardCollections.Domain.csproj" />
   </ItemGroup>
 
 </Project>
