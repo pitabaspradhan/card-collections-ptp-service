@@ -1,7 +1,12 @@
 ﻿
 namespace CardCollections.Application.DTOs
 {
-    public class CreatePromiseToPayRequest
+    public sealed class CreatePromiseToPayRequest
     {
+        public decimal Amount { get; init; }
+
+        public DateOnly PromiseDate { get; init; }
+
+        public string AgentId { get; init; } = string.Empty;
     }
 }

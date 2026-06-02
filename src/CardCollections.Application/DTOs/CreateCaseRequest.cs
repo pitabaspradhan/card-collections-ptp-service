@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CardCollections.Application.DTOs
+﻿namespace CardCollections.Application.DTOs
 {
-    public class CreateCaseRequest
+    public sealed class CreateCaseRequest
     {
+        public string CustomerId { get; init; } = string.Empty;
+
+        public string MaskedCardNumber { get; init; } = string.Empty;
+
+        public decimal DelinquentAmount { get; init; }
     }
 }
