@@ -1,7 +1,7 @@
-﻿namespace CardCollections.Domain.Enums
-{
-    public class CaseStatus
-    {
+﻿namespace CardCollections.Domain.Enums;
 
-    }
+public enum CaseStatus
+{
+    Open = 1,
+    PromiseToPay = 2
 }
