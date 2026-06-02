@@ -22,6 +22,12 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+.vs/
+
+TestResults/
+
+*.user
+*.suo
 
 # .NET Core
 project.lock.json
