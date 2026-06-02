@@ -11,8 +11,4 @@
     <ProjectReference Include="..\src\CardCollections.Domain\CardCollections.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
