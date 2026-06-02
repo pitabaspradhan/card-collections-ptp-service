@@ -1,10 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace CardCollections.Domain.Entities;
 
-namespace CardCollections.Domain.Entities
+public sealed class AuditEntry
 {
-    public class AuditEntry
+    public Guid Id { get; private set; }
+
+    public string Action { get; private set; }
+
+    public string User { get; private set; }
+
+    public string CorrelationId { get; private set; }
+
+    public DateTime TimestampUtc { get; private set; }
+
+    private AuditEntry()
     {
+    }
+
+    public AuditEntry(
+        string action,
+        string user,
+        string correlationId)
+    {
+        Id = Guid.NewGuid();
+        Action = action;
+        User = user;
+        CorrelationId = correlationId;
+        TimestampUtc = DateTime.UtcNow;
     }
 }
